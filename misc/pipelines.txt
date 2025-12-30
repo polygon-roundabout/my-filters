@@ -1,0 +1,11 @@
+# trim down to SLD.TLD and sort while removing dupes
+tr '[:upper:]' '[:lower:]' | sed 's/^https:\/\///g' | cut -d "/" -f1 | sed 's/^www[0-9]*\.//g' | sort -u
+
+# trim down src/urls.txt to SLD.TLD and sort while removing dupes
+tr '[:upper:]' '[:lower:]' < src/porn.txt | sed 's/^https:\/\///g' | cut -d "/" -f1 | sed 's/^www[0-9]*\.//g' | sort -u > $$ && mv $$ src/porn.txt
+
+# add ublock filter syntax
+awk '{print "||"$0"^"}'
+
+# generate ublock filter list from src/urls.txt
+cat src/ublock-porn-header.txt <(awk '{print "||"$0"^"}' src/porn.txt) > filters/ublock-porn.txt
