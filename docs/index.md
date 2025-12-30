@@ -1,6 +1,7 @@
-# my-filters
-Lists: 
- - My uBlock Porn Filters: [ublock-porn.txt](https://github.com/polygon-roundabout/my-filters/blob/main/filters/ublock-porn.txt)
+# My personal uBlock Filter Lists
+ - My uBlock Porn Filters:  
+   [Subscribe](ubo:subscribe?location=https%3A%2F%2Fraw.githubusercontent.com%2Fpolygon-roundabout%2Fmy-filters%2Frefs%2Fheads%2Fmain%2Ffilters%2Fublock-porn.txt&title=My%20uBlock%20Porn%20Filters)  
+   [Source](https://github.com/polygon-roundabout/my-filters)  
 
 # LICENSE
 This is free and unencumbered software released into the public domain.
