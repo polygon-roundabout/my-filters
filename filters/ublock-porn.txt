@@ -1,5 +1,5 @@
 ! Title: My uBlock Porn Filters
-! Expires: 5 days
+! Expires: 1 days
 ! License: https://unlicense.org/
 ! Homepage: https://polygon-roundabout.github.io/my-filters/
 ||0xxx.me^
